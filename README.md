@@ -1,103 +1,115 @@
-# Allsites Vitrine
- <h1>Example of website for expose products</h1>
+----------------------------------------------------------------------------------------
+EN
+----------------------------------------------------------------------------------------
+# AllSites Showcase
 
-<p>This is an systen for expose products project developed in Laravel 10 and PHP 8.2. The goal is to allow users to register and manage events, courses, presentations, and other activities they plan to organize.</p>
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/albertomaffeii/allsites-vitrine/blob/main/LICENSE)
 
-<h2>Main Features</h2>
+## Project Description
 
-<ul>
-  <li>User registration</li>
-  <li>Event registration</li>
-  <li>Homepage with a list of registered events</li>
-  <li>Event details, including full description and relevant information</li>
-  <li>Option to sign up for events</li>
-  <li>Event sharing and invitation functionality</li>
-  <li>Additional features for event organizers</li>
-</ul>
+AllSites Showcase is a functional example of a product showcase website built with PHP. It was developed using PHP version 8.2.4, Laravel framework version 10.14.1, and MySQL database version 10.4.28-MariaDB.
 
-<h2>Installation Requirements</h2>
+## Features
 
-<p>Make sure you have the following requirements installed in your development environment:</p>
+- Display of product catalog with detailed information
+- Advanced search to filter products by category, price, etc.
+- Product detail pages with images and descriptions
+- About Us estatic page
+- Contact Us page
 
-<ul>
-  <li>PHP 8.2</li>
-  <li>Laravel 10</li>
-  <li>Database (e.g., MySQL, PostgreSQL)</li>
-</ul>
+## Prerequisites
 
-<h2>Installation</h2>
+Make sure you have the following prerequisites before starting the project:
 
-<p>Follow the steps below to set up and run the project locally:</p>
+- PHP 8.2 installed
+- Laravel 10 installed
+- MySQL 8 installed
 
-<ol>
-  <li>Clone this repository to your local machine.</li>
-  <li>Run the command <code>composer install</code> to install Laravel dependencies.</li>
-  <li>Create a new <code>.env</code> file based on the <code>.env.example</code> file and configure the database connection information.</li>
-  <li>Run the command <code>php artisan key:generate</code> to generate an encryption key for the application.</li>
-  <li>Run the command <code>php artisan migrate</code> to execute the migrations and create the database tables.</li>
-  <li>Run the command <code>php artisan serve</code> to start the development server.</li>
-</ol>
+## Installation
 
-<p>After these steps, you will be able to access the project in your browser using the URL provided by the development server.</p>
+Follow the steps below to set up and run the project:
 
-<h2>Contributing</h2>
+1. Clone this repository: `git clone https://github.com/albertomaffeii/allsites-vitrine.git`
+2. Navigate to the project directory: `cd allsites-vitrine`
+3. Install Composer dependencies: `composer install`
+4. Configure the `.env` file with your database information
+5. Run the database migrations: `php artisan migrate`
+6. Start the local server: `php artisan serve`
 
-<p>This project is open to contributions. If you wish to contribute, please follow the contribution guidelines and submit your improvements through pull requests.</p>
+## How to Contribute
 
-<h2>License</h2>
+This project is an open example and welcomes contributions. You can use this code as a base for developing your own application. If you wish to contribute to this project, follow the steps below:
 
-<p>This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+1. Fork this repository
+2. Create a new branch for your contribution: `git checkout -b your-branch`
+3. Make the necessary changes
+4. Commit your changes: `git commit -m "Description of the changes"`
+5. Push your changes to the remote repository: `git push origin your-branch`
+6. Open a Pull Request for review
 
+Thank you in advance for any contribution you can make to improve this example. Your support is greatly appreciated!
 
---------------------------------------------------------------------------------------------------------
+## License
 
- <h1>Cadastro de Eventos</h1>
+This project is licensed under the [MIT License](https://github.com/albertomaffeii/allsites-vitrine/blob/main/LICENSE).
 
-<p>Este é um projeto de cadastro de eventos desenvolvido em Laravel 10 e PHP 8.2. O objetivo é permitir que os usuários se cadastrem, registrem eventos, cursos, palestras e outras atividades que desejam realizar.</p>
+## Important informations
+The design was created by Jean Bragantin and the codes were based on the "Laravel do Zero" project by Danilo Sampaio.
 
-<h2>Recursos Principais</h2>
+----------------------------------------------------------------------------------------
+PT-BR
+----------------------------------------------------------------------------------------
+# AllSites Vitrine
 
-<ul>
-  <li>Cadastro de usuários</li>
-  <li>Registro de eventos</li>
-  <li>Página inicial com lista de eventos cadastrados</li>
-  <li>Detalhes do evento, incluindo descrição completa e informações relevantes</li>
-  <li>Opção de inscrição nos eventos</li>
-  <li>Compartilhamento e convite para eventos</li>
-  <li>Funcionalidades adicionais para os organizadores de eventos</li>
-</ul>
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/albertomaffeii/allsites-vitrine/blob/main/LICENSE)
 
-<h2>Requisitos de Instalação</h2>
+## Descrição do Projeto
 
-<p>Certifique-se de ter os seguintes requisitos instalados em seu ambiente de desenvolvimento:</p>
+O AllSites Vitrine é um exemplo funcional de um site de vitrine de produtos em PHP. Ele foi desenvolvido com PHP na versão 8.2.4, utilizando o framework Laravel na versão 10.14.1 e o banco de dados MySQL na versão 10.4.28-MariaDB.
 
-<ul>
-  <li>PHP 8.2</li>
-  <li>Laravel 10</li>
-  <li>Banco de dados (ex: MySQL, PostgreSQL)</li>
-</ul>
+## Recursos e Funcionalidades
 
-<h2>Instalação</h2>
+- Exibição de catálogo de produtos com informações detalhadas
+- Pesquisa avançada para filtrar produtos por categoria, preço, etc.
+- Páginas de detalhes do produto com imagens e descrições
+- Página estática Sobre Nós
+- Página de Contato
 
-<p>Siga as etapas abaixo para configurar e executar o projeto localmente:</p>
+## Pré-requisitos
 
-<ol>
-  <li>Clone este repositório em sua máquina local.</li>
-  <li>Execute o comando <code>composer install</code> para instalar as dependências do Laravel.</li>
-  <li>Crie um novo arquivo <code>.env</code> baseado no arquivo <code>.env.example</code> e configure as informações de conexão do banco de dados.</li>
-  <li>Execute o comando <code>php artisan key:generate</code> para gerar uma chave de criptografia para a aplicação.</li>
-  <li>Execute o comando <code>php artisan migrate</code> para executar as migrações e criar as tabelas do banco de dados.</li>
-  <li>Execute o comando <code>php artisan serve</code> para iniciar o servidor de desenvolvimento.</li>
-</ol>
+Certifique-se de ter os seguintes requisitos antes de iniciar o projeto:
 
-<p>Após essas etapas, você poderá acessar o projeto em seu navegador usando a URL fornecida pelo servidor de desenvolvimento.</p>
+- PHP 8.2 instalado
+- Laravel 10 instalado
+- Banco de dados MySQL 8 instalado
 
-<h2>Contribuições</h2>
+## Instalação
 
-<p>Este projeto está aberto a contribuições. Se você deseja colaborar, siga as diretrizes de contribuição e envie suas melhorias por meio de pull requests.</p>
+Siga as etapas abaixo para configurar e executar o projeto:
 
-<h2>Licença</h2>
+1. Clone este repositório: `git clone https://github.com/albertomaffeii/allsites-vitrine.git`
+2. Navegue até o diretório do projeto: `cd allsites-vitrine`
+3. Instale as dependências do Composer: `composer install`
+4. Configure o arquivo `.env` com as informações do banco de dados
+5. Execute as migrações do banco de dados: `php artisan migrate`
+6. Inicie o servidor local: `php artisan serve`
 
-<p>Este projeto está licenciado sob a <a href="https://opensource.org/licenses/MIT">Licença MIT</a>.</p>
+## Como Contribuir
 
+Este projeto é um exemplo aberto para contribuições. Você pode usar este código como base para o desenvolvimento da sua própria aplicação. Se você deseja contribuir para este projeto, siga as etapas abaixo:
 
+1. Faça um fork deste repositório
+2. Crie uma nova branch com a sua contribuição: `git checkout -b sua-branch`
+3. Faça as modificações necessárias
+4. Faça o commit das suas alterações: `git commit -m "Descrição das alterações"`
+5. Envie as suas alterações para o repositório remoto: `git push origin sua-branch`
+6. Abra um Pull Request para revisão
+
+Agradecemos antecipadamente por qualquer contribuição que você possa fazer para melhorar este exemplo. Seu apoio é muito apreciado!
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](https://github.com/albertomaffeii/allsites-vitrine/blob/main/LICENSE).
+
+## Informações Importântes
+O design foi criado por Jean Bragantin e os códigos foram baseados no projeto "Laravel do Zero" de Danilo Sampaio.

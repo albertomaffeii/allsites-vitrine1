@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,26 +14,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\BlogController;
+use App\Http\Controllers\Site\HomeController;
+use App\Http\Controllers\Site\CategoryController;
+use App\Http\Controllers\Site\BlogController;
+use App\Http\Controllers\Site\ContactController;
 
-use App\Http\Controllers\ContactController;
+Route::get('/', [HomeController::class, '__invoke'])->name('site.home');
 
-Route::get('/', [HomeController::class, '__invoke']);
+Route::get('/products', [CategoryController::class, 'index'])->name('site.products');
+Route::get('/products/{slug}', [CategoryController::class, 'show'])->name('site.products.category');
 
-Route::get('/products', [CategoryController::class, 'index']);
-Route::get('/products/{slug}', [CategoryController::class, 'show']);
+Route::get('/blog', [BlogController::class, '__invoke'])->name('site.blog');
 
-Route::get('/blog', [BlogController::class, '__invoke']);
+Route::view('/about', view:'site.about.index')->name('site.about'); //Static page
 
-Route::view('/about', view:'site.about.index'); //Static page
-
-Route::get('/contact', [ContactController::class, 'index']);
-Route::post('/contact', [ContactController::class, 'store']);
-
-
-
+Route::get('/contact', [ContactController::class, 'index'])->name('site.contact');
+Route::post('/contact', [ContactController::class, 'store'])->name('site.contact.store');
 
 
 ?>

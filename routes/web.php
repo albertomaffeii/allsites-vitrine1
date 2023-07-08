@@ -13,6 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\BlogController;
+
+use App\Http\Controllers\ContactController;
+
+Route::get('/', [HomeController::class, '__invoke']);
+
+Route::get('/products', [CategoryController::class, 'index']);
+Route::get('/products/{slug}', [CategoryController::class, 'show']);
+
+Route::get('/blog', [BlogController::class, '__invoke']);
+
+Route::view('/about', view:'site.about.index'); //Static page
+
+Route::get('/contact', [ContactController::class, 'index']);
+Route::post('/contact', [ContactController::class, 'store']);
+
+
+
+
+
+?>
